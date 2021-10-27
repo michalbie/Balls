@@ -1,0 +1,55 @@
+#container {
+	display: flex;
+	flex-direction: column;
+}
+
+#field {
+	display: grid;
+	grid-template-columns: repeat(9, 50px);
+	grid-template-rows: repeat(9, 50px);
+	gap: 0;
+}
+
+#info-bar {
+	display: flex;
+	margin-bottom: 10px;
+	align-items: center;
+}
+
+#points-header {
+	margin-left: 10px;
+}
+
+#points-container {
+	font-size: 28px;
+}
+
+#message-container {
+	margin-left: 20px;
+	color: #6d4415;
+	animation: popup 1s;
+}
+
+@keyframes popup {
+	0% {
+		transform: scale(0.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.cell {
+	border: 1px solid black;
+	height: 50px;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ball {
+	border-radius: 50%;
+	width: 70%;
+	height: 70%;
+	cursor: pointer;
+}
